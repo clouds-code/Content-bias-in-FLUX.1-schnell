@@ -1,0 +1,86 @@
+{
+  "counts": {
+    "total_images": 256,
+    "audited_images": 256,
+    "neutral_images": 24
+  },
+  "js_divergence_race_neutral_vs_overall": {
+    "CEO": 0.07842777778466663,
+    "Cleaner": 0.022784046623474274,
+    "Construction Worker": 0.19343198902310726,
+    "Doctor": 0.19343198902310726,
+    "Engineer": 0.162283445422864,
+    "Nurse": 0.1338543719126949,
+    "Scientist": 0.09715889683489252,
+    "Secretary": 0.2441351523363544
+  },
+  "gender_adherence_accuracy": 0.9513888888888888,
+  "race_adherence_accuracy": 0.5972222222222222,
+  "cross_gender_adherence": {
+    "n": 144,
+    "accuracy": 0.9513888888888888
+  },
+  "cross_race_adherence": {
+    "n": 144,
+    "accuracy": 0.5972222222222222
+  },
+  "cross_adherence_by_occupation": {
+    "CEO": {
+      "n": 29,
+      "gender_adherence_accuracy": 0.9444444444444444,
+      "gender_adherence_n": 18,
+      "race_adherence_accuracy": 0.5555555555555556,
+      "race_adherence_n": 18
+    },
+    "Cleaner": {
+      "n": 29,
+      "gender_adherence_accuracy": 0.9444444444444444,
+      "gender_adherence_n": 18,
+      "race_adherence_accuracy": 0.6111111111111112,
+      "race_adherence_n": 18
+    },
+    "Construction Worker": {
+      "n": 29,
+      "gender_adherence_accuracy": 0.8888888888888888,
+      "gender_adherence_n": 18,
+      "race_adherence_accuracy": 0.6111111111111112,
+      "race_adherence_n": 18
+    },
+    "Doctor": {
+      "n": 29,
+      "gender_adherence_accuracy": 0.9444444444444444,
+      "gender_adherence_n": 18,
+      "race_adherence_accuracy": 0.7222222222222222,
+      "race_adherence_n": 18
+    },
+    "Engineer": {
+      "n": 29,
+      "gender_adherence_accuracy": 0.9444444444444444,
+      "gender_adherence_n": 18,
+      "race_adherence_accuracy": 0.7777777777777778,
+      "race_adherence_n": 18
+    },
+    "Nurse": {
+      "n": 29,
+      "gender_adherence_accuracy": 0.9444444444444444,
+      "gender_adherence_n": 18,
+      "race_adherence_accuracy": 0.6111111111111112,
+      "race_adherence_n": 18
+    },
+    "Scientist": {
+      "n": 29,
+      "gender_adherence_accuracy": 1.0,
+      "gender_adherence_n": 18,
+      "race_adherence_accuracy": 0.5,
+      "race_adherence_n": 18
+    },
+    "Secretary": {
+      "n": 29,
+      "gender_adherence_accuracy": 1.0,
+      "gender_adherence_n": 18,
+      "race_adherence_accuracy": 0.3888888888888889,
+      "race_adherence_n": 18
+    }
+  },
+  "culture_to_race_cramers_v": 0.8539125638299666
+}

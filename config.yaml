@@ -1,0 +1,59 @@
+openai:
+  api_key_env: OPENAI_API_KEY
+  model: dall-e-3
+  size: 1024x1024
+  quality: standard
+  response_format: b64_json
+  max_retries: 6
+  initial_backoff_seconds: 2
+  max_backoff_seconds: 60
+
+generator:
+  # 指定为 siliconflow 后端
+  backend: siliconflow
+
+# 移除或注释掉不相关的 Hugging Face 配置，防止误用
+# huggingface:
+#   token_env: HF_TOKEN
+#   api_base: https://api-inference.huggingface.co
+#   model_id: black-forest-labs/FLUX.1-schnell
+#   timeout_seconds: 120
+#   max_retries: 8
+#   initial_backoff_seconds: 2
+#   max_backoff_seconds: 60
+
+siliconflow:
+  # SiliconFlow 平台专用配置
+  api_key_env: SILICONFLOW_API_KEY
+  base_url: https://api.siliconflow.cn/v1
+  model: black-forest-labs/FLUX.1-schnell
+  size: 1024x1024
+  response_format: b64_json
+  timeout_seconds: 180
+  max_retries: 8
+  initial_backoff_seconds: 2
+  max_backoff_seconds: 60
+
+diffusers:
+  model_id: hf-internal-testing/tiny-stable-diffusion-pipe
+  device: cpu
+  seed: 42
+  num_inference_steps: 2
+  guidance_scale: 0.0
+  width: 256
+  height: 256
+
+dummy:
+  width: 1024
+  height: 1024
+  font_size: 20
+
+paths:
+  prompts_csv: data/prompts.csv
+  prompts_with_paths_csv: data/prompts_with_paths.csv
+  images_dir: output/images
+  audit_results_json: data/audit_results.json
+  reports_dir: reports
+
+run:
+  limit: null
